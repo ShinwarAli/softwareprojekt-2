@@ -1,0 +1,60 @@
+/* Instructions.css */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Main Steps Container */
+#mainSteps {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px; /* Increased padding for consistency */
+  background-color: #f0f4f8; /* Same background color as file upload */
+  border-radius: 12px; /* Match border radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Same box shadow */
+}
+
+/* Ordered List */
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Button Container */
+.button-containerSteps {
+  display: flex;
+  gap: 10px; /* Abstand zwischen den Buttons */
+  justify-content: center; /* Zentriert die Buttons horizontal */
+  margin-top: 20px; /* Optional: Abstand nach oben */
+}
+
+/* Buttons */
+.uploadJsonButton, .weiterButton {
+  padding: 10px 20px;
+  background-color: #ea454c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 250px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.uploadJsonButton:hover, .weiterButton:hover {
+  background-color: #d73c43;
+}

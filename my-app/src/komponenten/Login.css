@@ -1,0 +1,337 @@
+.login-page {
+  display: flex;
+  height: 100vh; /* Vollbild-Höhe für die Seite */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Linke Seite mit wellenförmigem Übergang und Kreisen */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #ea454c 0%, #ff758c 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dekorative Kreise im Hintergrund */
+.circle1, .circle2, .circle3 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(233, 69, 76, 0.3);
+  z-index: 0;
+}
+
+.circle1 {
+  width: 250px;
+  height: 250px;
+  top: -50px;
+  left: -50px;
+  background-color: rgba(233, 69, 76, 0.3);
+}
+
+.circle2 {
+  width: 180px;
+  height: 180px;
+  bottom: 100px;
+  right: -50px;
+  background-color: rgba(233, 69, 76, 0.2);
+}
+
+.circle3 {
+  width: 120px;
+  height: 120px;
+  top: 200px;
+  left: 100px;
+  background-color: rgba(233, 69, 76, 0.4);
+}
+
+/* SVG-Welle mit dunkler Farbe */
+.login-left::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 1440 320%22%3E%3Cpath fill%3D%22%231e1e30%22 fill-opacity%3D%221%22 d%3D%22M0%2C192L60%2C186.7C120%2C181%2C240%2C171%2C360%2C160C480%2C149%2C600%2C139%2C720%2C122.7C840%2C107%2C960%2C85%2C1080%2C101.3C1200%2C117%2C1320%2C171%2C1380%2C197.3L1440%2C224L1440%2C320L1380%2C320C1320%2C320%2C1200%2C320%2C1080%2C320C960%2C320%2C840%2C320%2C720%2C320C600%2C320%2C480%2C320%2C360%2C320C240%2C320%2C120%2C320%2C60%2C320L0%2C320Z%22%3E%3C/path%3E%3C/svg%3E');
+  background-size: cover;
+  z-index: 2;
+}
+
+/* Logo-Anpassung mit Kreis-Hintergrund */
+.spm-logo-wrapper {
+  width: 220px;
+  height: 220px;
+  background-color: rgba(255, 255, 255, 0.2); /* Ein heller Hintergrundkreis */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 30px rgba(244, 242, 242, 0.2); /* Schatten für mehr Kontrast */
+  margin-bottom: 20px;
+  z-index: 1; /* Damit das Logo vor den Kreisen bleibt */
+  margin-top: -10px; /* Logo leicht nach oben verschieben */
+}
+
+.spm-logo {
+  width: 130px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.spm-logo:hover {
+  transform: scale(1.1);
+}
+
+.neon-glow {
+  filter: drop-shadow(0px 0px 20px #ff758c);
+}
+
+.login-left h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  color: white;
+  font-size: 18px;
+  max-width: 300px;
+  opacity: 0.9;
+}
+
+/* Rechte Seite */
+.login-right {
+  flex: 1;
+  background-color: #1e1e30; /* Dunkle Farbe beibehalten */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.login-box {
+  width: 350px;
+  padding: 40px;
+  background-color: #2a2a3d;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+.login-box h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.login-box p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Input Labels (E-Mail/Passwort) in Weiß */
+.input-label {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left; /* Linksbündige Ausrichtung */
+}
+
+/* Input Styles */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #2a2a3d;
+  color: #bbb; /* Textfarbe Grau */
+}
+
+.login-box input::placeholder {
+  color: #bbb; /* Placeholder-Text in Grau */
+}
+
+.login-box input:focus {
+  border-color: #ea454c;
+  outline: none;
+  box-shadow: 0 0 10px #ea454c, 0 0 40px rgba(255, 117, 140, 0.7);
+}
+
+/* Checkbox und Passwort vergessen */
+.remember-forgot {
+  display: flex;
+  flex-direction: column; /* Anordnung untereinander */
+  align-items: flex-start; /* Linksbündig ausrichten */
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  color: #e2dada;
+  display: inline-flex; /* Flexbox für horizontale Anordnung */
+  align-items: center; /* Vertikale Ausrichtung */
+  justify-content: flex-start; /* Horizontale Ausrichtung */
+  font-size: small;
+  margin-bottom: 5px; /* Abstand zur "Forgot Password?" */
+  white-space: nowrap; /* Verhindert Zeilenumbrüche */
+}
+
+.remember-me input {
+  margin-right: 5px; /* Abstand zwischen Checkbox und Text */
+  vertical-align: middle; /* Mittige Ausrichtung */
+}
+
+.forgot-password {
+  color: #ff758c; /* Hauptfarbe für das Passwort */
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ea454c 0%, #ff758c 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(234, 69, 76, 0.4), 0 6px 30px rgba(255, 117, 140, 0.5);
+}
+
+/* Register Link */
+.register-text {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.register-text a {
+  color: #ff758c;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* Animationen und Feinheiten */
+.login-left h2,
+.login-left p,
+.login-right {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-left {
+    order: 1;
+    height: 40vh;
+    padding: 20px;
+  }
+
+  .spm-logo-wrapper {
+    width: 180px;
+    height: 180px; /* Kleinere Größe für Tablet */
+    margin-bottom: 40px; /* Logo nach unten verschieben */
+    margin-top: -5px; /* Leicht nach oben schieben */
+  }
+
+  .spm-logo {
+    width: 130px; /* Logo für Tablet */
+  }
+
+  .login-left h2,
+  .login-left p {
+    display: none; /* Text ausblenden auf kleineren Bildschirmen */
+  }
+
+  .login-right {
+    flex: 1;
+    padding: 20px;
+    order: 2;
+  }
+
+  .login-box {
+    width: 300px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-left {
+    order: 1;
+    height: 35vh;
+    padding: 15px;
+  }
+
+  .spm-logo-wrapper {
+    width: 150px;
+    height: 150px; /* Kleinere Größe für Mobilgeräte */
+    margin-bottom: 30px; /* Logo weiter nach unten schieben */
+    margin-top: -5px; /* Leicht nach oben schieben */
+  }
+
+  .spm-logo {
+    width: 120px; /* Logo für Mobilgeräte */
+  }
+
+  .login-left h2,
+  .login-left p {
+    display: none; /* Text komplett ausblenden auf kleinen Bildschirmen */
+  }
+
+  .login-right {
+    padding: 10px;
+    order: 2;
+  }
+
+  .login-box {
+    width: 280px;
+    padding: 10px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .login-box input {
+    padding: 10px;
+  }
+
+  .login-btn {
+    font-size: 16px;
+  }
+
+  .register-text {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,242 @@
+{
+    "timetable": [
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-V",
+            "Day": "Montag",
+            "Time": "16:00-17:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-V",
+            "Day": "Montag",
+            "Time": "17:00-18:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-Ü",
+            "Day": "Montag",
+            "Time": "18:00-19:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Blunck",
+            "Course": "Mathematik für Informatiker 3-Ü",
+            "Day": "Dienstag",
+            "Time": "08:00-09:00",
+            "Room": "C7-09"
+        },
+        {
+            "Instructor": "Blunck",
+            "Course": "Mathematik für Informatiker 3-Ü",
+            "Day": "Dienstag",
+            "Time": "09:00-10:00",
+            "Room": "C7-09"
+        },
+        {
+            "Instructor": "Blunck",
+            "Course": "Mathematik für Informatiker 3-V",
+            "Day": "Dienstag",
+            "Time": "10:00-11:00",
+            "Room": "C7-09"
+        },
+        {
+            "Instructor": "Blunck",
+            "Course": "Mathematik für Informatiker 3-V",
+            "Day": "Dienstag",
+            "Time": "11:00-12:00",
+            "Room": "C7-09"
+        },
+        {
+            "Instructor": "Köhn",
+            "Course": "Webtechnologien 2-V",
+            "Day": "Dienstag",
+            "Time": "14:00-15:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Köhn",
+            "Course": "Webtechnologien 2-V",
+            "Day": "Dienstag",
+            "Time": "15:00-16:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Köhn",
+            "Course": "Webtechnologien 2-Ü",
+            "Day": "Dienstag",
+            "Time": "16:00-17:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Köhn",
+            "Course": "Webtechnologien 2-P",
+            "Day": "Mittwoch",
+            "Time": "14:00-15:00",
+            "Room": "C6-05"
+        },
+        {
+            "Instructor": "Köhn",
+            "Course": "Webtechnologien 2-P",
+            "Day": "Mittwoch",
+            "Time": "15:00-16:00",
+            "Room": "C6-05"
+        },
+        {
+            "Instructor": "Köhn",
+            "Course": "Webtechnologien 2-P",
+            "Day": "Mittwoch",
+            "Time": "16:00-17:00",
+            "Room": "C6-05"
+        },
+        {
+            "Instructor": "Blunck",
+            "Course": "Ringvorlesung",
+            "Day": "Mittwoch",
+            "Time": "17:00-18:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Oesing",
+            "Course": "Ringvorlesung",
+            "Day": "Mittwoch",
+            "Time": "17:00-18:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Müller-Schneiders",
+            "Course": "Ringvorlesung",
+            "Day": "Mittwoch",
+            "Time": "18:00-19:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Brabender",
+            "Course": "Ringvorlesung",
+            "Day": "Mittwoch",
+            "Time": "18:00-19:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Köhn",
+            "Course": "Ringvorlesung",
+            "Day": "Mittwoch",
+            "Time": "19:00-20:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Lütticke",
+            "Course": "Ringvorlesung",
+            "Day": "Mittwoch",
+            "Time": "19:00-20:00",
+            "Room": "D3-16"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-P",
+            "Day": "Donnerstag",
+            "Time": "12:00-13:00",
+            "Room": "C5-11"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-P",
+            "Day": "Donnerstag",
+            "Time": "13:00-14:00",
+            "Room": "C5-11"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-P",
+            "Day": "Donnerstag",
+            "Time": "14:00-15:00",
+            "Room": "C5-11"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-P",
+            "Day": "Donnerstag",
+            "Time": "15:00-16:00",
+            "Room": "C5-11"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-P",
+            "Day": "Freitag",
+            "Time": "08:00-09:00",
+            "Room": "C5-11"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-P",
+            "Day": "Freitag",
+            "Time": "09:00-10:00",
+            "Room": "C5-11"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-P",
+            "Day": "Freitag",
+            "Time": "10:00-11:00",
+            "Room": "C5-11"
+        },
+        {
+            "Instructor": "Coersmeier",
+            "Course": "Mikrocontroller-P",
+            "Day": "Freitag",
+            "Time": "11:00-12:00",
+            "Room": "C5-11"
+        },
+        {
+            "Instructor": "Hötten",
+            "Course": "IT-Sicherheit-Ü",
+            "Day": "Freitag",
+            "Time": "12:00-13:00",
+            "Room": "Lise-Meitner-Allee 4 (ITS)"
+        },
+        {
+            "Instructor": "Hötten",
+            "Course": "IT-Sicherheit-V",
+            "Day": "Freitag",
+            "Time": "13:00-14:00",
+            "Room": "Lise-Meitner-Allee 4 (ITS)"
+        },
+        {
+            "Instructor": "Hötten",
+            "Course": "IT-Sicherheit-V",
+            "Day": "Freitag",
+            "Time": "14:00-15:00",
+            "Room": "Lise-Meitner-Allee 4 (ITS)"
+        },
+        {
+            "Instructor": "Scheffer",
+            "Course": "IT-Sicherheit-P",
+            "Day": "Freitag",
+            "Time": "15:00-16:00",
+            "Room": "C0-08"
+        },
+        {
+            "Instructor": "Scheffer",
+            "Course": "IT-Sicherheit-P",
+            "Day": "Freitag",
+            "Time": "16:00-17:00",
+            "Room": "C0-08"
+        },
+        {
+            "Instructor": "Scheffer",
+            "Course": "IT-Sicherheit-P",
+            "Day": "Freitag",
+            "Time": "17:00-18:00",
+            "Room": "C0-08"
+        }
+    ],
+    "header": [
+        "Instructor",
+        "Course",
+        "Day",
+        "Time",
+        "Room"
+    ]
+}
